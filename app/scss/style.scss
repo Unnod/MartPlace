@@ -1,3 +1,155 @@
 @import '_global';
 @import '_fonts';
 @import '_vars';
+
+
+.header{
+    &__top{
+        background-color: #eef1f3;
+    }
+    &__top-inner{
+        align-items: center;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        line-height: 28px;
+        &-img{
+            width: 50px;
+            height: 50px;
+        }
+        span{
+            font-weight: 700;
+        }
+        .black{
+            color: #000;
+        }
+        .blue{
+            color: $blue;
+        }
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 50px;
+        height: 36px;
+        padding: 0px 18px;
+        background-color: $blue;
+        color: #fff;
+        border-radius: 32px;
+    }
+
+    &__icons{
+        margin-right: 50px;
+        a{
+            color: #7e8fa1;
+            font-size: 16px;
+            & + a{
+                margin-left: 30px;
+            }
+        }
+        
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+        &-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 25px;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+        }
+        &-name{
+            display: inline-block;
+            font-weight: 500;
+            color: $dark;
+            padding-bottom: 8px;
+        }
+        &-cash{
+            display: inline-block;
+            color: $blue;
+        }
+    }
+
+    &__menu{
+        
+        &-inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        &-form{ 
+            form{
+                 position: relative;
+            }
+            input{
+                outline: none;
+                padding-right: 90px;
+                padding-left: 25px;
+                height: 45px;
+                background-color: #fff;
+                border: 1px solid #d9dfe5;
+                border-radius: 32px;
+                width: 270px;
+                transition: all .5s;
+                position: absolute;
+                top: -23px;
+                right: 0;
+                &:focus{
+                    width: 400px;
+                }
+            }
+            button{
+                cursor: pointer;
+                font-size: 18px;
+                position: absolute;
+                content: '';
+                color: #fff;
+                right: 0;
+                top: -23px;
+                border: none;
+                background-color: $blue;
+                height: 45px;
+                width: 70px;
+                border-radius: 32px;
+            }
+        }
+    }
+}
+
+.header__list-menu{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 34px;
+        }
+    }
+    a{
+        font-weight: 500;
+        font-size: 15px;
+        color: $dark;
+        text-transform: uppercase;
+    }
+}
+
+section{
+    background-color: $blue;
+    height: 500px;
+}
