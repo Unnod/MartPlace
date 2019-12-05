@@ -268,9 +268,203 @@
     }
 }
 
-.al{
-    background-color: #fff;
-    height: 500px;
+.advantages{
+    &__inner{
+        padding-bottom: 120px;
+        padding-top: 200px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+    }
+    &__item{
+        text-align: center;
+        max-width: 360px;
+        width: 100%;
+        padding: 40px 30px 50px;
+        &:hover{
+            box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        }
+    }
+    &__img{
+        img{
+            
+        }
+        margin-bottom: 30px;
+    }
+    &__title{
+        font-size: 24px;
+        color: #010101;
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-size: 16px;
+        color: #555555;
+    }
+}
+
+.slider{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #eff1f5;
+    &__title-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin-bottom: 50px;
+    }
+    &__title{
+        font-size: 30px;
+        color: #000;
+    }
+    &__arrows{
+        background-color: #7347c1;
+        border-radius: 30px;
+        height: 45px;
+        width: 110px;
+    }
+    &__inner{
+    }
+    &__item{
+        background-color: #fff;
+        color: #000;
+        &-inner{
+            display: flex;
+        }
+    }  
+    &__img{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-width: 555px;
+        height: 450px;
+        width: 100%;
+    }
+    &__info{
+        box-sizing: border-box;
+        padding: 50px 50px 25px;
+        box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+    }
+    &__name{
+        font-size: 24px;
+        display: inline-block;
+        padding-bottom: 15px;
+        @include f500;
+        color: #000;
+    }
+    &__box{
+        display: flex;
+    }
+    &__author{ 
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 35px;
+        &-avatar{
+            width: 30px;
+            height: 30px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 10px;
+            font-size: 15px;
+        }
+        &-name{
+            margin-right: 45px;
+        }
+    }
+    &__type{
+        color: #7347c1;
+        padding-left: 10px;
+        position: relative;
+        font-size: 15px;
+        &::before{
+            content: "\f19a";
+            font-family: 'icomoon';
+            position: absolute;
+            left: -10px;
+            color: #7347c1;
+            font-size: 15px;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        color: #555555;
+        margin-bottom: 40px;
+    }
+    &__marker-box{
+        display: flex;
+        a{
+            color: #868c96;
+            font-size: 15px;
+            padding: 8px 20px;
+            background-color: #f1f3f6;
+            border-radius: 30px;
+            & + a{
+                margin-left: 10px;
+            }
+        }
+        margin-bottom: 45px;
+    }
+    &__info-bottom{
+        display: flex;
+        padding-top: 24px;
+        border-top: 1px solid #ececec;
+    }
+    &__price{
+        a{
+            font-size: 15px;
+            padding: 9px 20px;
+            color: #fff; 
+            border-radius: 30px;
+            background-color: $blue;
+        }
+        margin-right: 45px;
+    }
+    &__like{
+        font-size: 15px;
+        color: #555555;
+        padding-left: 10px;
+        position: relative;
+        margin-right: 40px;
+        &::before{
+            content: "\f08a";
+            font-family: 'icomoon';
+            color: #7347c1;
+            left: -10px;
+            position: absolute;
+        }
+    }
+    &__count{
+        padding-left: 10px;
+        font-size: 15px;
+        color: $blue;
+        position: relative;
+        &::before{
+            content: "\f07a";
+            font-family: 'icomoon';
+            color: $blue;
+            left: -10px;
+            position: absolute;
+        }
+    }
+    .slick-arrow{
+        position: absolute;
+        top: -113px;
+        right: 44px;
+        border: none;
+        background-color: transparent;
+        &::before{
+            color: #daceee;
+            font-size: 20px;
+        }
+        cursor: pointer;
+        outline: none;
+    }
+    .prev-arrow{
+        right: 105px;
+    }
 }
 
   
