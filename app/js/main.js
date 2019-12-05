@@ -1,6 +1,6 @@
 $(function() {
 
-    $(".slider__stars").rateYo({
+    $(".stars").rateYo({
         rating: 4.5,
         readOnly: true
       });
@@ -11,7 +11,8 @@ $(function() {
         nextArrow: '<button class="slick-arrow next-arrow icon-angle-right"></button>'
     });
 
-    
+
+    var mixer = mixitup('.products__inner');
 
 });
 
