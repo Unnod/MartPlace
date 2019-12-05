@@ -359,7 +359,6 @@
     }
     &__author{ 
         display: flex;
-        justify-content: flex-start;
         margin-bottom: 35px;
         &-avatar{
             width: 30px;
@@ -409,6 +408,8 @@
     }
     &__info-bottom{
         display: flex;
+        justify-content: flex-start;
+        align-items: center;
         padding-top: 24px;
         border-top: 1px solid #ececec;
     }
@@ -464,6 +465,15 @@
     }
     .prev-arrow{
         right: 105px;
+    }
+    &__stars{
+        margin-left: auto;
+        width: auto !important;
+        svg{
+            height: 14px;
+            width: 14px;
+        }
+        
     }
 }
 
