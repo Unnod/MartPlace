@@ -1,6 +1,11 @@
 $blue: #0674ec;
 $dark: #333333;
 
+@mixin f300 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
 @mixin f500 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;

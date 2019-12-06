@@ -618,4 +618,128 @@
     }
 }
 
+.stats{
+    background-color: #212225;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        text-align: center;
+        max-width: 150px;
+        width: 100%;
+        &-img{
+            margin-bottom: 50px;
+            &::before{
+                font-size: 48px;
+            }
+        }
+        .icon-briefcase,
+        #icon-briefcase{
+            color: #feb71d ;
+        }
+        .icon-cloud-download,
+        #icon-cloud-download{
+            color: #58c9e9;
+        }
+        .icon-smile-o,
+        #icon-smile-o{
+            color: #77de51;
+        }
+        .icon-group,
+        #icon-group{
+            color: #ff6a6d;
+        }
+        &-number{
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        &-title{
+            font-size: 18px;
+        }
+    }
+}
+
+.about{
+    padding-top: 115px;
+    padding-bottom: 115px;
+    text-align: center;
+    &__title{
+        font-size: 36px;
+        color: #000;
+        margin-bottom: 30px;
+        span{
+            color: $blue;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        color: #555555;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        width: 690px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item{
+        margin-bottom: 30px;
+        text-align: center;
+        padding: 20px 30px 45px;
+        max-width: 361px;
+        width: 100%;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        position: relative;
+        &-numeral{
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            font-size: 48px;
+            color: rgba(92, 135, 248,.3);
+            @include f300;
+        }
+        &-img{
+            &::before{
+                font-size: 60px;
+            }
+            margin-top: 30px;
+            padding-bottom: 50px;
+        }
+        .icon-newspaper-o{
+            color: #0674ec;
+        }
+        .icon-magic-wand{
+            color: #7f4ec2;
+        }
+        .icon-lock{
+            color: #77de51;
+        }
+        .icon-bar-chart{
+            color: #feb71d;
+        }
+        .icon-leaf{
+            color: #58c9e9;
+        }
+        .icon-fax{
+            color: #ff6a6d;
+        }
+        &-title{
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 30px;
+        }
+        &-text{
+            font-size: 16px;
+            color: #555555;
+        }
+        
+    }
+      
+}
+
   
