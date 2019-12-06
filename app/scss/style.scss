@@ -742,4 +742,44 @@
       
 }
 
+.sellnstart{
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        width: 50vw;
+        height: 561px;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &-img{
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        &-title{
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        &-text{
+            font-size: 16px;
+            width: 595px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        &-link{
+            a{
+              
+                font-size: 16px;
+                color: $blue;
+                background-color: #fff;
+                border-radius: 30px;
+                padding: 19px 20px;
+                width: 192px;
+                display: inline-block;
+            }
+        }
+    }
+}
   
