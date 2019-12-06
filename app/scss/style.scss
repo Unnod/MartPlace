@@ -663,25 +663,28 @@
     }
 }
 
+.page-title{
+    text-align: center;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 30px;
+    span{
+        color: $blue;
+    }
+}
+.page-text{
+    text-align: center;
+    font-size: 16px;
+    color: #555555;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 690px;
+}
+
 .about{
     padding-top: 115px;
     padding-bottom: 115px;
     text-align: center;
-    &__title{
-        font-size: 36px;
-        color: #000;
-        margin-bottom: 30px;
-        span{
-            color: $blue;
-        }
-    }
-    &__text{
-        font-size: 16px;
-        color: #555555;
-        margin: 0 auto;
-        margin-bottom: 50px;
-        width: 690px;
-    }
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -783,3 +786,58 @@
     }
 }
   
+.feedback{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+
+    }     
+    &__item{
+        padding: 50px 35px 45px;
+        border-left: 2px solid $blue;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        & + .feedback__item{
+            margin-left: 30px;
+        }
+        &-author{
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 30px;
+            &-info{
+                
+            }
+            &-img{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-right: 20px;
+                width: 80px;
+                height: 80px;
+            }
+            &-name{
+                font-size: 20px;
+                color: #000;
+                padding-bottom: 10px;
+            }
+            &-prof{
+                font-size: 16px;
+                color: #555555;
+            }
+        }
+        &-icon{
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 60px;
+            color: #e8e8e8;
+        }
+        &-text{
+            color: $grey;
+            font-size: 16px;
+        }
+    }
+}
